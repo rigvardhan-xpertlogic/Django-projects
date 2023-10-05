@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home_page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'Home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'output' %}">Student list</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div>
+    <h1>Insert Student data</h1>
+    <br>
+    <br>
+   <form action="" style="text-align:left;" method=POST>{% csrf_token %}
+    <label>Name :</label>
+    <input type="text" name="name" placeholder="name" size="50" autofocus required>
+    <br><br>
+    <label>Class :</label>
+    <select name="class">
+        <option lanel="1_Class">Class 1</option>
+        <option lanel="2_Class">Class 2</option>
+        <option lanel="3_Class">Class 3</option>    
+        <option lanel="4_Class">Class 4</option>
+        <option lanel="5_Class">Class 5</option>
+        <option lanel="6_Class">Class 6</option>
+        <option lanel="7_Class">Class 7</option>
+        <option lanel="8_Class">Class 8</option>
+        <option lanel="9_Class">Class 9</option>
+       <option lanel="10_Class">Class 10</option>
+       <option lanel="11_Class">Class 11</option>
+       <option lanel="12_Class">Class 12</option>
+    </select>
+    <label>Section :</label>
+    <select name="Section">
+        <option lanel="A_secton">secton A</option>
+        <option lanel="B_secton">secton B</option>
+        <option lanel="C_secton">secton C</option>    
+        <option lanel="D_secton">secton D</option>
+    </select>
+    <br><br>
+    <label>Roll number :</label>
+    <input type="number" name="rollnumber" min="1" max="30">
+    <br><br>
+    <label>Subject :</label>
+    <select name='Subject'>
+        <option lanel="English">English</option>
+        <option lanel="Hindi">Hindi</option>
+        <option lanel="Math">Math</option>    
+        <option lanel="Science">Science</option>          
+    </select>
+    <br><br>
+    <label>Email-id :</label>
+    <input type="email" name="emailid" placeholder="Email-id">
+    <br><br>
+    <label >Mobile :</label>
+    <input type="tel" name="Mobile" maxlength="10" minlength="10" required>
+    <br><br> 
+    <input type="submit" value="SUBMIT">
+   </form>
+    </div>
+</body>
+</html>

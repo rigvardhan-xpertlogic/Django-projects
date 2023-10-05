@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Display</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'Home' %}">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'output' %}">Student list</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="{% url 'SearchResults' %}" method="get">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder=" Search by Name " aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+
+
+    <div>
+        <h1>List of all students</h1>
+        
+        <br><br>
+        {% for a in data_valu %}
+        <form>
+        <fieldset>
+        <legend style="border: 2px;">Student_data</legend>
+        <label for="name">NAME :</label>
+        <input type="text" value="{{a.student_name}}" disabled>
+        <br><br>
+        <label>Class :</label>
+        <input type="text" value="{{a.student_class}}" disabled>
+        <label>Section :</label>
+        <input type="text" value="{{a.student_section}}" disabled>
+        <br><br>
+        <label>Roll number :</label>
+        <input type="text" value="{{a.roll_number}}" disabled>
+        <br><br>
+        <label>Subject :</label>
+        <input type="text" value="{{a.subject}}" disabled>
+        <br><br>
+        <label>Email-id :</label>
+        <input type="text" value="{{a.student_email}}" disabled>
+        <br><br>
+        <label >Mobile :</label>
+        <input type="text" value="{{a.phone_number}}" disabled>
+        <br><br><br><br>
+        </fieldset>
+        </form>
+        {% endfor %}        
+    </div>
+</body>
+</html>

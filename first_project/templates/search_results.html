@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>List of Students</h1>
+        {% for a in object_list %}
+        <form>
+        <fieldset>
+        <legend>Student_data</legend>
+        <label for="name">NAME :</label>
+        <input type="text" value="{{a.student_name}}" disabled>
+        <br><br>
+        <label>Class :</label>
+        <input type="text" value="{{a.student_class}}" disabled>
+        <label>Section :</label>
+        <input type="text" value="{{a.student_section}}" disabled>
+        <br><br>
+        <label>Roll number :</label>
+        <input type="text" value="{{a.roll_number}}" disabled>
+        <br><br>
+        <label>Subject :</label>
+        <input type="text" value="{{a.subject}}" disabled>
+        <br><br>
+        <label>Email-id :</label>
+        <input type="text" value="{{a.student_email}}" disabled>
+        <br><br>
+        <label >Mobile :</label>
+        <input type="text" value="{{a.phone_number}}" disabled>
+        <br><br><br><br>
+        </fieldset>
+        </form>
+        {% endfor %}
+    </div>
+</body>
+</html>
