@@ -1,0 +1,42 @@
+html{
+    font-size: 10px;
+}
+.container{
+    padding: 6.4rem;              /*internal border of block*/     
+    align-items: center;
+    justify-content: center;
+    gap: 6.4rem;
+}
+.upper-main-content{
+
+    padding: 0 32rem 6.4rem 32rem;
+    text-align: center;
+    gap: 2.4rem;
+    margin-bottom: 20px;
+}
+h1{
+    font-size: 6.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 800;
+    line-height: 80px;
+}
+p{  
+    font-family: 'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+button{  
+    border-radius: 2.5rem;
+    background: #000000;
+    font-size: large;
+    border: 0.1rem solid #000000;
+    padding: 1.7rem 5.2rem;
+    color:#ffffff;
+}
+
+img{
+    margin: 0.5rem;
+    width: 28.9rem;
+    height: 25rem;
+}
