@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+.main-container{
+    display: flex;
+}
+
+figure{
+    padding-top: 54.4px;
+    
+}
+
+img{
+    width: 679px;
+    height: 659px;
+}
+
+.container{
+    padding: 72.4px 96px 36.4px 96px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+h1{
+    
+    color: #252525;
+    font-family: 'Lato', sans-serif;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+.p1{
+    
+    color: rgba(37, 37, 37, 0.80);
+    font-family:'Lato', sans-serif;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+a{
+    display:inline-block;
+    border-radius: 16px;
+    background:  #252525;
+    font-size: large;
+    font-family:'Lato', sans-serif;
+    border: 0.1rem solid  #252525;
+    padding: 15px 45px;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+
+h6{
+    color: rgba(37, 37, 37, 0.55);
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.pp{
+    
+    color: rgba(37, 37, 37, 0.80);
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.p2{
+    padding-bottom:20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .main-container{
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 136px;
+    }
+    .container{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    img{
+        height: 500px;
+    }
+    .pp{
+        font-size: 2.5rem;
+        padding: 0px 40px;
+    }
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    h1{
+        font-size:6.5rem;
+        line-height: 80px;
+        margin-bottom: 30px;
+    }
+
+    .p1{
+        margin-bottom: 30px;
+        font-size: 3rem;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .main-container{
+        padding: 30px 136px;
+    }
+    .p1{
+        font-size:2.5rem;
+        padding: 10px;
+    }
+    .pp{
+        padding: 0px 29px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width: 500px;
+        height: 350px;
+    }
+
+    h1{
+        font-size: 6rem;
+        margin-bottom: 0px;
+    }
+
+    .p1{
+        padding:30px
+    }
+    .main-container{
+        padding: 30px 50px;
+    }
+}

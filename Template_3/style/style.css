@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+.container{
+    padding: 77.95px 64px 35.78px 63px;    
+}
+
+.top-content{
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 100px;
+}
+
+h1{ max-width: 50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 65px;
+    padding-right: 107.19px;
+}
+
+.content{
+    padding-left: 40px;
+    max-width: 50%;
+}
+
+p{
+    color: rgba(37, 37, 37, 0.80);
+    font-family: 'Lato', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom:32px;
+}
+
+a{  display:inline-block;
+    border-radius: 2.5rem;
+    background: #000000;
+    font-size: large;
+    font-family:'Lato', sans-serif;
+    border: 0.1rem solid #000000;
+    padding: 15px 45px;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+img{
+    width: 1245.53px;
+    height: 467.7px;
+}
+
+@media only screen and (max-width: 992px) {
+    .container{
+        padding: 77.95px 28px 35.78px 28px;
+    }
+
+    h1{
+        font-size: 6.3rem;
+        padding-right: 0;
+    }
+
+    img{
+        width: 929px;
+        height: 603px;
+    }
+
+    a{
+        padding: 12px 40px;
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:30px;
+        text-align: center;
+    }
+
+    .top-content{
+    
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 8rem;
+        max-width: 100%;
+        line-height: 123px;
+        padding-bottom: 40px;
+    }
+    p{  
+        font-size: 3rem;
+        margin-bottom: 50px;
+        padding: 0px 10px;
+    }
+    .content{
+        padding-left:0px;
+        max-width: 100%;
+    }
+
+    img{
+        width:700px;
+        height: 400px;
+    }
+
+    a{
+        padding: 15px 45px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    img{
+        width:550px;
+        height: 400px;
+    }
+    .container{
+        padding-top: 15px;
+    }
+    h1{
+        line-height: 75px;
+    }
+}
