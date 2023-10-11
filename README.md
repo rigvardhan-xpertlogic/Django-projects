@@ -1,4 +1,4 @@
-# Django-projects
+# Django-projects and Html-templates
 <h1>Project based on students data</h1>
 <br>
 <h2>Frameworks required to run this project:</h2>
