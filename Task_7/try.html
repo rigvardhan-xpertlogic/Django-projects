@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image_div</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        html{
+              font-size: 10px;
+        }
+       body{
+              background-color: rgb(231, 155, 40);
+       }
+
+       .div_0{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin:26px 20px 20px 20px;
+       }
+       .div_1{
+              background-color: blueviolet;
+              display: flex;
+              height: 660px;
+              width: 1170px;
+       }
+       .div_2{
+              width:50%;
+              height:100%;
+              display: inline-flex;
+              justify-content: center;
+              
+       }
+       .div_l{
+              font-size: 1rem;
+       }
+       .div_r{
+              background-color: yellowgreen;
+              flex-direction: column;
+              padding-left: 40px;
+              font-family: Arial;
+              color: white;
+              gap: 50px;
+       }
+
+       .div_r h2{
+              font-size: 4.5rem;
+       }
+
+       figure{
+              width:100%;
+              height:100%;
+       }
+       img{
+              width: 100%;
+              height: 100%;
+       }
+       .div_l_background_image{
+              object-fit: contain;
+       }
+       figure{
+              font-size: 0px;
+       }
+       a{    
+              all: unset;
+              cursor:pointer;
+              font-size: 2rem;
+              display: flex;
+              gap:5px;
+       }
+       .div_r_1{
+              border: 1px solid white;
+              border-radius: 40px;
+              width: 260px;
+       }
+       .div_r_1:hover{
+              background-color: white;
+              color: yellowgreen;
+       }
+       .arrow_svg{
+              width: 24px;
+              height: 24px;
+              margin-top: 18px;
+              margin-right: 20px;
+       }
+    </style>
+
+</head>
+<body>
+       <div class="div_0">
+              <div class="div_1">
+                     <div class="div_2 div_l">
+                            <!--<figure><img class="top_image" src="/images/top_imge.jpg" alt="">
+                            </figure>-->
+                            <figure class="div_l_background_image"><img  src="/images/background_imge.jpg" alt="image not found">
+                            </figure>
+                     </div>
+                     <div class="div_2 div_r">
+                            <h2>Lorem consectetur adipisicing elit sites dolor amet</h2>
+                            <div class="div_r_1">
+                                   <a href="#" target="_self">
+                                          <span style="padding: 20px 0px 20px 30px;">Elit sites dolor amet</span>
+                                          <svg viewBox="24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="arrow_svg">
+                                                 <path d="M16.86 11H4v2h12.86l-5.04 6h2.62l5.86-7-5.86-7h-2.62l5.04 6z"></path>
+                                          </svg>
+                                   </a>
+                            </div>
+                     </div>
+              </div>
+       </div>
+</body>
+</html>

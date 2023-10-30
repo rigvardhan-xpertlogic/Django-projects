@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+/*top link bar*/
+#div-2-link-1{
+    background-color: #1f3121;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    color: white;
+    font-size:1.7rem;
+    font-family: Arial;
+}
+#div-1-link-1 a{
+    color: white;
+}
+
+#div-1-link-1{
+    display: flex;
+    padding: 0.7% 0%;
+    padding-right: 35px;
+}
+#closeButton{
+    background-color: inherit;
+    border: none;
+    position: absolute;
+    right: 15px;
+    
+}
+#closeButton path{
+    fill:white;
+}
+/*top link bar*/
+
+.container{
+    background-color: rgb(255, 255, 255);
+}
+.top-div{
+    background-color: blueviolet;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: brown;
+}
+/*=============================*/
+.top-content{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content h1{
+    font-size: 110px;
+    width: 631px;
+    text-align: center;
+}
+
+.top-content-p{
+    margin-top: 44px;
+}
+
+.top-content-p p{
+    font-size: 2.5rem;;
+    letter-spacing:-1px;
+}
+
+.top-content-a{
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.top-content-a a{
+    display:inline-flex;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    /*line-height: 1.5;*/
+    border-radius: 25px;
+}
+
+.top-content-anchor-tag-1{
+    color: #fffdf9;
+    background-color: #ff4f00;
+    border: 1px solid #ff4f00; 
+    padding: 12px 40px;
+}
+
+.top-content-anchor-tag-2{
+    background-color: #fffdf9;
+    color: #201515;
+    border: 1px solid #201515;
+    padding: 12px 20px;
+    gap:8px;
+}
+
+.top-content-anchor-tag-2 span{
+    /*padding-top:3px;
+    */
+    padding-right: 6px;
+    height: 21px;
+}
+
+/*LIST ITEMS*/
+.checklist{
+    display: flex;
+    margin-top: 47px;
+    font-family: Arial;
+    gap: 10px;
+}
+.checklist p{
+    font-size: 1.5rem;
+}
+.checklistItem{
+    display: inline-flex;
+    gap: 10px;
+    padding-left:10px;
+}
+
+ul {
+    list-style: none;
+}
+  
+ul li:before {
+    content: '✓';
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+/* LIST ITEMS */
+
+
+/*second div*/
+.second_div{
+    margin-top: 26px;
+}
+/*second div*/
+
+/*images_slide*/  
+.images_slide_container{
+    background-color: blueviolet;
+    --space:3rem;   
+    min-height: 30vh;
+    display: grid;  
+    align-content: center;
+    overflow: hidden;
+    gap:var(--space);   
+    width: 100%;
+}
+.images_slide{
+    --duration:35s; 
+    --gap:var(--space); 
+    display:flex;
+    overflow: hidden;
+    user-select: none;  
+    gap:var(--space);   
+}
+
+.images__group{
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:var(--gap);
+    min-width: 100%;
+    animation: images_scroll var(--duration) linear infinite;
+}  
+
+.images__group_img{
+      width:100%;
+      height:100%;
+      border-radius: 1rem;
+}
+
+.images__group figure{
+      object-fit: cover;
+      width:90px;
+      height:60px;
+      border-radius: 1rem;
+      border: 1px solid #000000;
+}
+
+@keyframes images_scroll {
+    0%{                                 
+        transform: translateX(0);
+    }
+    100%{                               
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+/*images_slide*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*second block
+
+.images-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    font-family: Arial;
+    gap: 25px;
+    padding-bottom: 40px;
+    background-color: yellowgreen;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-block-div figure{
+    width: 258px;
+    height: 199px;
+}
+
+.images-block-item-title{
+    padding: 14px 0px 14px 14px;
+    font-size: 20px;
+}
+
+.images-block-item{
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.image-block-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:40px;
+}
+
+.image-block-content-heading h2{
+    font-size: 20px;
+    width: 200px;
+}
+.image-block-content-paragraph p{
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+second block*/
+
