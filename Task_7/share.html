@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*images_slide*/  
+    .images_slide_container{
+        background-color: blueviolet;
+        --space:3rem;   
+        min-height: 30vh;
+        display: grid;  
+        align-content: center;
+        overflow: hidden;
+        gap:var(--space);   
+        width: 100%;
+    }
+    .images_slide{
+        --duration:35s; 
+        --gap:var(--space); 
+        display:flex;
+        overflow: hidden;
+        user-select: none;  
+        gap:var(--space);   
+    }
+
+    .images__group{
+        flex-shrink: 0; 
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap:var(--gap);
+        min-width: 100%;
+        animation: images_scroll var(--duration) linear infinite;
+    }  
+
+    .images__group_img{
+          width:100%;
+          height:100%;
+          border-radius: 1rem;
+    }
+
+    .images__group figure{
+          object-fit: cover;
+          width:90px;
+          height:60px;
+          border-radius: 1rem;
+          border: 1px solid #000000;
+    }
+
+    @keyframes images_scroll {
+        0%{                                 
+            transform: translateX(0);
+        }
+        100%{                               
+            transform: translateX(calc(-100% - var(--gap)));
+        }
+    }
+    /*images_slide*/
+    </style>
+</head>
+<body>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.29 6.29001L12 10.59L7.71004 6.29001L6.29004 7.71001L10.59 12L6.29004 16.29L7.71004 17.71L12 13.41L16.29 17.71L17.71 16.29L13.41 12L17.71 7.71001L16.29 6.29001Z" fill="#2D2E2E"></path>
+    </svg>
+
+    <div class="images_slide_container">
+        <div class="images_slide">
+            <div class="images__group">   
+                <figure><img class="images__group_img" src="images/images_2.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_3.jpg" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_4.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_2.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_3.jpg" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_4.png" alt="Image-not-found"></figure>
+            </div>
+            <div aria-hidden="true" class="images__group">
+                <figure><img class="images__group_img" src="images/images_2.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_3.jpg" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_4.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_2.png" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_3.jpg" alt="Image-not-found"></figure>
+                <figure><img class="images__group_img" src="images/images_4.png" alt="Image-not-found"></figure>
+            </div>
+        </div>
+    </div><!--images_slide_container-->
+</body>
+</html>

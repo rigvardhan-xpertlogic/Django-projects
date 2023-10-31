@@ -13,12 +13,12 @@ html{
     display:flex;
     align-items:center;
     justify-content: center;
-    color: white;
+    color: #ffffff;
     font-size:1.7rem;
     font-family: Arial;
 }
 #div-1-link-1 a{
-    color: white;
+    color: #ffffff;
 }
 
 #div-1-link-1{
@@ -31,29 +31,35 @@ html{
     border: none;
     position: absolute;
     right: 15px;
-    
+    cursor: pointer;
 }
 #closeButton path{
-    fill:white;
+    fill:#ffffff;
 }
 /*top link bar*/
 
+
+
 .container{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff;
 }
 .top-div{
-    background-color: blueviolet;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;            
+    
+    /*it is working and reqiurde
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;*/
 }
-nav{
-    background-color: brown;
+/*nav{
+
 }
+*/
 /*=============================*/
 .top-content{
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,7 +94,6 @@ nav{
     text-decoration: none;
     font-size: 18px;
     font-weight: 600;
-    /*line-height: 1.5;*/
     border-radius: 25px;
 }
 
@@ -108,8 +113,6 @@ nav{
 }
 
 .top-content-anchor-tag-2 span{
-    /*padding-top:3px;
-    */
     padding-right: 6px;
     height: 21px;
 }
@@ -141,18 +144,79 @@ ul li:before {
 }
 /* LIST ITEMS */
 
-
-/*second div*/
-.second_div{
-    margin-top: 26px;
+/*CARDS SECTON*/
+.cards-block{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center; 
+    justify-content: center;
+    font-family: Arial; 
+    gap:20px;
+    padding-bottom: 100px;
+    box-shadow: inset 0px -400px  #adff2f;
+    margin-top: 28px;
 }
-/*second div*/
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.image-block-div figure{
+    width: 283px;
+    height: 199px;
+}
+
+.card-block-item-title{
+    padding: 14px;
+    font-size: 2rem;
+}
+
+.card-block-item{
+    background-color: #ffffff;
+    border-radius:5px;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px;
+}
+.card-block-item:hover{
+    box-shadow: 5px 5px #000000;
+}
+
+.card-block-content{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 20px;
+    gap: 40px;
+}
+
+.card-block-content-heading h2{
+    font-size: 2.8rem;
+    width: 200px;
+    
+}
+
+.card-block-content-paragraph p{
+    display: flex;
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.card-block-item a{
+    all: unset; 
+    cursor: pointer;
+}
+
+.cards_arrow_svg{
+    display: inline-flex;
+    border-bottom: 1px solid #000000;
+}
+/*CARDS SECTON*/
 
 /*images_slide*/  
 .images_slide_container{
-    background-color: blueviolet;
-    --space:3rem;   
-    min-height: 30vh;
+    --space:8rem;   
+    /*min-height: 30vh;*/
+    min-height: 19.96vh;
     display: grid;  
     align-content: center;
     overflow: hidden;
@@ -160,7 +224,7 @@ ul li:before {
     width: 100%;
 }
 .images_slide{
-    --duration:35s; 
+    --duration:80s; 
     --gap:var(--space); 
     display:flex;
     overflow: hidden;
@@ -179,17 +243,16 @@ ul li:before {
 }  
 
 .images__group_img{
-      width:100%;
-      height:100%;
-      border-radius: 1rem;
+      max-width: 202px;
+      max-height: 33px;
+      width:auto;
+      height:auto;
 }
 
 .images__group figure{
       object-fit: cover;
-      width:90px;
-      height:60px;
-      border-radius: 1rem;
-      border: 1px solid #000000;
+      width:auto;
+      height:34px;
 }
 
 @keyframes images_scroll {

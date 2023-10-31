@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>image_div</title>
     <style>
-        *{
+       *{
             box-sizing: border-box;
             padding: 0;
             margin: 0;
-        }
-        html{
+       }
+       html{
               font-size: 10px;
-        }
+       }
        body{
-              background-color: rgb(231, 155, 40);
+              background-color: rgb(255, 255, 255);
        }
 
        .div_0{
@@ -25,7 +25,7 @@
        }
        .div_1{
               background-color: blueviolet;
-              display: flex;
+              display:flex;
               height: 660px;
               width: 1170px;
        }
@@ -37,10 +37,20 @@
               
        }
        .div_l{
-              font-size: 1rem;
+              font-size: 0px;
        }
+       
+       .background-figure{
+              width:100%;
+              height:100%;
+       }
+       img{
+              width:100%;
+              height:100%;
+       }
+
        .div_r{
-              background-color: yellowgreen;
+              background-color: rgba(31,49,33,1);
               flex-direction: column;
               padding-left: 40px;
               font-family: Arial;
@@ -52,20 +62,6 @@
               font-size: 4.5rem;
        }
 
-       figure{
-              width:100%;
-              height:100%;
-       }
-       img{
-              width: 100%;
-              height: 100%;
-       }
-       .div_l_background_image{
-              object-fit: contain;
-       }
-       figure{
-              font-size: 0px;
-       }
        a{    
               all: unset;
               cursor:pointer;
@@ -80,7 +76,7 @@
        }
        .div_r_1:hover{
               background-color: white;
-              color: yellowgreen;
+              color: rgba(31,49,33,1);
        }
        .arrow_svg{
               width: 24px;
@@ -89,23 +85,21 @@
               margin-right: 20px;
        }
     </style>
-
 </head>
+
 <body>
        <div class="div_0">
               <div class="div_1">
-                     <div class="div_2 div_l">
-                            <!--<figure><img class="top_image" src="/images/top_imge.jpg" alt="">
-                            </figure>-->
-                            <figure class="div_l_background_image"><img  src="/images/background_imge.jpg" alt="image not found">
-                            </figure>
-                     </div>
+                     <div class="div_2 div_l">  
+                            <figure class="background-figure"><img  src="images/DTS_Daniel_Faro_CC_80_Architects_008_uxnfwl.avif" alt="image not found"></figure>
+                            <figure class="front-figure"></figure>
+                     </div>                    
                      <div class="div_2 div_r">
                             <h2>Lorem consectetur adipisicing elit sites dolor amet</h2>
                             <div class="div_r_1">
                                    <a href="#" target="_self">
                                           <span style="padding: 20px 0px 20px 30px;">Elit sites dolor amet</span>
-                                          <svg viewBox="24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="arrow_svg">
+                                          <svg width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="arrow_svg">
                                                  <path d="M16.86 11H4v2h12.86l-5.04 6h2.62l5.86-7-5.86-7h-2.62l5.04 6z"></path>
                                           </svg>
                                    </a>
